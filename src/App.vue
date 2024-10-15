@@ -4,14 +4,14 @@
   <div v-else class="mx-auto" id="content">
     <Nav />
     <!-- HERO  -->
-    <Hero />
+    <Hero class=""/>
     <!-- HERO  ENDED-->
 
     <!-- About sectio -->
     <About />
     <!-- About sectio -->
-    <div class="mx-auto">
-      <div class="hero bg-base-200 lg:min-h-full sm:min-h-screen py-2 mb-3">
+    <div id="works" class="mx-auto">
+      <div class="hero bg-base-200 lg:min-h-full sm:min-h-screen py-2 pb-3">
         <div class="">
           <div class="divider p-5">
             <p class="text-2xl lg:text-3xl font-mono text-center">
@@ -31,29 +31,26 @@
             >
               <div class="card glass w-80">
                 <figure>
-                  <img
+                  <img class="cursor-pointer"
                     id="image"
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="./assets/pos1.png"
                     alt="car!"
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Life hack</h2>
-                  <p>How to park your car at your garage?</p>
+                  <h2 class="card-title">Mini Mart Pos system</h2>
+                  <p class="text-xs text-justify">This is designed specifically to meet the needs of small retail businesses by providing laravel Api & vue.</p>
                   <div class="flex flex-wrap justify-center gap-1">
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
+                    <span class="badge badge-sm badge-outline">Laravel</span>
+                    <span class="badge badge-sm badge-outline">Vue</span>
+                    <span class="badge badge-sm badge-outline">Api</span>
                   </div>
                   <p class="text-xs">
                     Check out the project on GitHub:
                     <a
                       class="text-blue-600 text-wrap text-xs"
-                      href="https://github.com/zaw-min-htut001/online-learning-system.git"
-                      >https://github.com/zaw-min-htut001/online-learning-system.git</a
+                      href="https://github.com/zaw-min-htut001/mini-mart-pos.git"
+                      >https://github.com/zaw-min-htut001/mini-mart-pos.git</a
                     >
                   </p>
                 </div>
@@ -69,29 +66,32 @@
             >
               <div class="card glass w-80">
                 <figure>
-                  <img
+                  <img class="cursor-pointer"
                     id="image1"
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="./assets/new.png"
                     alt="car!"
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Life hack</h2>
-                  <p>How to park your car at your garage?</p>
+                  <h2 class="card-title">Blog App</h2>
+                  <p class="text-xs text-justify">This App is designed to provide an intuitive and flexible environment for both writers and readers. It serves as a centralized space where users can create, organize, and share articles</p>
                   <div class="flex flex-wrap justify-center gap-1">
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
+                    <span class="badge badge-sm badge-outline">laravel</span>
+                    <span class="badge badge-sm badge-outline">Api</span>
+                    <span class="badge badge-sm badge-outline">vue</span>
                   </div>
                   <p class="text-xs">
                     Check out the project on GitHub:
                     <a
+                      class="text-blue-600 text-nowrap text-xs"
+                      href="https://github.com/zaw-min-htut001/Blog_app.git"
+                      >https://github.com/zaw-min-htut001/Blog_app.git</a
+                    >
+                    <br>
+                    <a
                       class="text-blue-600 text-wrap text-xs"
-                      href="https://github.com/zaw-min-htut001/online-learning-system.git"
-                      >https://github.com/zaw-min-htut001/online-learning-system.git</a
+                      href="https://github.com/zaw-min-htut001/Blog_app_vue.git"
+                      >https://github.com/zaw-min-htut001/Blog_app_vue.git</a
                     >
                   </p>
                 </div>
@@ -107,29 +107,26 @@
             >
               <div class="card glass w-80">
                 <figure>
-                  <img
+                  <img class="cursor-pointer"
                     id="image2"
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="./assets/hr.png"
                     alt="car!"
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Life hack</h2>
-                  <p>How to park your car at your garage?</p>
+                  <h2 class="card-title">Employee Management App</h2>
+                  <p class="text-xs text-justify">The app serves as a comprehensive solution for HR departments, managers, and business owners, providing a centralized platform for handling key employee-related tasks such as tracking work hours, managing payroll</p>
                   <div class="flex flex-wrap justify-center gap-1">
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
+                    <span class="badge badge-sm badge-outline">laravel</span>
+                    <span class="badge badge-sm badge-outline">jquery</span>
+                    <span class="badge badge-sm badge-outline">ajax</span>
                   </div>
                   <p class="text-xs">
                     Check out the project on GitHub:
                     <a
                       class="text-blue-600 text-wrap text-xs"
-                      href="https://github.com/zaw-min-htut001/online-learning-system.git"
-                      >https://github.com/zaw-min-htut001/online-learning-system.git</a
+                      href="https://github.com/zaw-min-htut001/ninja_hr.git"
+                      >https://github.com/zaw-min-htut001/ninja_hr.git</a
                     >
                   </p>
                 </div>
@@ -145,29 +142,26 @@
             >
               <div class="card glass w-80">
                 <figure>
-                  <img
+                  <img class="cursor-pointer"
                     id="image3"
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src="./assets/chat.png"
                     alt="car!"
                   />
                 </figure>
                 <div class="card-body">
-                  <h2 class="card-title">Life hack</h2>
-                  <p>How to park your car at your garage?</p>
+                  <h2 class="card-title">RealTime Chat App</h2>
+                  <p class="text-xs text-justify">The Chat App is designed to cater to a variety of users—from casual conversations among friends to formal communications within organizations.</p>
                   <div class="flex flex-wrap justify-center gap-1">
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
-                    <span class="badge badge-sm badge-outline">default</span>
+                    <span class="badge badge-sm badge-outline">laravel</span>
+                    <span class="badge badge-sm badge-outline">livewire</span>
+                    <span class="badge badge-sm badge-outline">Pusher</span>
                   </div>
                   <p class="text-xs">
                     Check out the project on GitHub:
                     <a
                       class="text-blue-600 text-wrap text-xs"
-                      href="https://github.com/zaw-min-htut001/online-learning-system.git"
-                      >https://github.com/zaw-min-htut001/online-learning-system.git</a
+                      href="https://github.com/zaw-min-htut001/realtime-chat.git"
+                      >https://github.com/zaw-min-htut001/realtime-chat.git</a
                     >
                   </p>
                 </div>
@@ -178,7 +172,7 @@
       </div>
     </div>
 
-    <footer class="footer bg-neutral text-neutral-content items-center p-4">
+    <footer id="contact" class="footer bg-neutral text-neutral-content items-center p-4">
       <aside class="grid-flow-col items-center">
         <svg
           width="36"
@@ -248,13 +242,13 @@
         </p>
       </div>
       <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a>
+        <a href="https://github.com/zaw-min-htut001">
           <img class="w-7 h-7 text-white bg-slate-50 rounded-full" src="./assets/github-brands-solid.svg" alt="">
         </a>
-        <a>
+        <a href="https://t.me/zawminh047">
           <img class="w-7 h-7 text-white bg-slate-50 rounded-full" src="./assets/telegram-brands-solid.svg" alt="">
         </a>
-        <a>
+        <a href="https://www.linkedin.com/in/zaw-min-htut-51a20b296">
           <img class="w-7 h-7 text-white bg-slate-50 rounded-full" src="./assets/linkedin-brands-solid.svg" alt="">
         </a>
       </nav>

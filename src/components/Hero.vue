@@ -19,8 +19,8 @@
               A Backend Developer Specializing in Creative Web Solutions.
             </p>
             <div class="flex flex-col sm:flex-row gap-2 lg:justify-start md:justify-center sm:justify-center">
-              <button class="btn btn-outline btn-info">Contact Me</button>
-              <button class="btn btn-outline">View My Work</button>
+              <a href="#contact"><button class="btn btn-outline btn-info">Contact Me</button></a>
+              <a href="#works"><button class="btn btn-outline">View My Work</button></a>
             </div>
             <div class="laravel-logo-container absolute right-40 top-16">
               <!-- Laravel SVG logo -->
