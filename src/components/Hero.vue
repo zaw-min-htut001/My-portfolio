@@ -5,9 +5,9 @@
           <div class="relative">
 
             <img src="../assets/my.jpeg" style="width: 300px;"
-              class="max-w-sm rounded-lg shadow-2xl origin-top-left rotate-6 absolute top-0 left-4 blur-sm object-cover" />
+              class="img max-w-sm rounded-lg shadow-2xl origin-top-left rotate-6 absolute top-0 left-4 blur-sm object-cover" />
             <img src="../assets/my.jpeg" style="width: 300px;"
-              class="max-w-sm rounded-lg shadow-2xl origin-bottom -rotate-6 relative object-cover" />
+              class="img max-w-sm rounded-lg shadow-2xl origin-bottom -rotate-6 relative object-cover" />
           </div>
           <div class="p-5 text-center lg:text-start md:text-center sm:text-center relative">
             <h1 class="text-5xl lg:text-5xl md:text-4xl sm:text-3xl font-light">
@@ -49,6 +49,12 @@
 .laravel-logo {
   opacity: 0.2;
   width: 50px;
+}
+
+@media (max-width: 400px) {
+    .img {
+      width: 250px !important;
+    }
 }
 </style>
 

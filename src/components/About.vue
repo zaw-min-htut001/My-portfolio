@@ -13,7 +13,7 @@
               </h1>
             </div>
 
-            <p class="text-justify indent-8 leading-7">
+            <p class="text-justify indent-8 leading-7 px-3">
               I'm a backend developer with 2 years of experience in building
               scalable, efficient, and reliable server-side applications. My
               expertise lies in technologies such as
@@ -89,7 +89,7 @@
             </div>
 
             <div class="text-center mt-3">
-              <button class="btn btn-outline btn-block">
+              <button class="btn btn-outline btn-block  px-3">
                 Downlaod CV
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="size-6">
@@ -228,6 +228,36 @@
     width: 100%;
     /* Adjust based on the space you need */
     max-width: 340px;
+    /* Optional: limit the width */
+  }
+
+  .avatar img {
+    width: 3rem;
+    /* Smaller size for mobile (24px) */
+  }
+
+  .icon-loop {
+    animation-duration: 15s;
+    /* Slow down animation on smaller screens */
+  }
+
+  .tail {
+    margin-right: 15px;
+    /* Reduce space between icons for mobile */
+  }
+
+  .avatar {
+    margin-right: 15px;
+    /* Reduce space between icons for mobile */
+  }
+}
+@media (max-width: 400px) {
+  .icon-loop-container {
+    overflow: hidden;
+    /* Hide overflow */
+    width: 100%;
+    /* Adjust based on the space you need */
+    max-width: 300px;
     /* Optional: limit the width */
   }
 
