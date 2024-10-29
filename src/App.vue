@@ -22,6 +22,41 @@
           <div
             class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:gap-5 gap-5"
           >
+          <div
+              class="col-span-1"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div class="card glass w-80">
+                <figure>
+                  <img class="cursor-pointer"
+                    id="image11"
+                    src="./assets/Screenshot from 2024-10-29 18-38-23.png"
+                    alt="car!"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">E-Wallet Application</h2>
+                  <p class="text-xs text-justify">
+                    Creating an e-wallet application with Laravel, jQuery, and AJAX involves building a streamlined platform for secure and fast money transfers. User can manage authentication account balances,transfer and transaction histories.</p>
+                  <div class="flex flex-wrap justify-center gap-1">
+                    <span class="badge badge-sm badge-outline">Laravel</span>
+                    <span class="badge badge-sm badge-outline">Jquery</span>
+                    <span class="badge badge-sm badge-outline">Ajax</span>
+                  </div>
+                  <p class="text-xs">
+                    Check out the project on GitHub:
+                    <a
+                      class="text-blue-600 text-wrap text-xs"
+                      href="https://github.com/zaw-min-htut001/wallet-app.git"
+                      >https://github.com/zaw-min-htut001/wallet-app.git</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
             <div
               class="col-span-1"
               data-aos="fade-up"
@@ -286,6 +321,7 @@ export default {
     },
     initializeViewer() {
       // Get the gallery element where Viewer.js will be applied
+      const gallery11 = document.getElementById("image11");
       const gallery = document.getElementById("image");
       const gallery1 = document.getElementById("image1");
       const gallery2 = document.getElementById("image2");
@@ -296,6 +332,18 @@ export default {
         this.viewerInstance = new Viewer(gallery, {
           inline: false, // Display the viewer as a modal (not inline)
           toolbar: false, // Show the toolbar (zoom, rotate, etc.)
+          viewed: () => {
+            if (!this.isMobileDevice()) {
+              this.viewerInstance.zoomTo(1); // Set default zoom level only on non-mobile devices
+            }
+          },
+        });
+      }
+      if (gallery11) {
+        // Create a new Viewer.js instance
+        this.viewerInstance = new Viewer(gallery11, {
+          inline: false, // Display the viewer as a modal (not inline)
+          toolbar: true, // Show the toolbar (zoom, rotate, etc.)
           viewed: () => {
             if (!this.isMobileDevice()) {
               this.viewerInstance.zoomTo(1); // Set default zoom level only on non-mobile devices
