@@ -89,7 +89,7 @@
             </div>
 
             <div class="text-center mt-3">
-              <a href="https://drive.google.com/file/d/1_vJX_3VDv7JjhpNaqgyY8vEF5398d0Bn/view?usp=sharing" download="zawminhtut.pdf" target="_blank">
+              <a href="https://drive.google.com/file/d/14kN3zh20vGmO5MpZdkh1wu-5cP5mwp31/view?usp=drive_link" download="zawminhtut.pdf" target="_blank">
                 <button class="btn btn-outline btn-block  px-3">
                 Downlaod CV
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
