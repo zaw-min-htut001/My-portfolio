@@ -1,12 +1,15 @@
 <template>
   <div class="portfolio-shell">
+    <!-- Animated background orbs -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+
     <PortfolioHeader :nav-items="navItems" />
 
     <main class="page-content">
       <HeroSection :profile="profile" :quick-stats="quickStats" :signal-tags="signalTags" />
       <TrustStrip :items="trustStrip" />
       <ExperienceSection :items="experience" />
-      <AboutStackSection :strengths="strengths" :skills="skills" />
       <EducationContactSection :education="education" :profile="profile" :socials="socials" />
     </main>
 
@@ -15,7 +18,6 @@
 </template>
 
 <script setup>
-import AboutStackSection from "../components/portfolio/AboutStackSection.vue";
 import EducationContactSection from "../components/portfolio/EducationContactSection.vue";
 import ExperienceSection from "../components/portfolio/ExperienceSection.vue";
 import HeroSection from "../components/portfolio/HeroSection.vue";
@@ -30,9 +32,7 @@ import {
   profile,
   quickStats,
   signalTags,
-  skills,
   socials,
-  strengths,
   trustStrip,
 } from "../data/portfolio";
 </script>

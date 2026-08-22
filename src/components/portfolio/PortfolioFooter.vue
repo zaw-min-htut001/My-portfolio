@@ -1,7 +1,8 @@
 <template>
   <footer class="site-footer">
-    <p>© {{ currentYear }} Zaw Min Htut</p>
-    <span>Modern startup style portfolio in Vue.</span>
+    <span class="footer-brand">ZM</span>
+    <span>© {{ currentYear }} Zaw Min Htut · Built with Vue &amp; Vite</span>
+    <span>Laravel · Backend Developer</span>
   </footer>
 </template>
 

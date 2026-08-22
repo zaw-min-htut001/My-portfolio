@@ -16,7 +16,8 @@ export const currentYear = new Date().getFullYear();
 export const navItems = [
   { label: "Home", hash: "#home" },
   { label: "Experience", hash: "#experience" },
-  { label: "About", hash: "#about" },
+  { label: "Education", hash: "#education" },
+  { label: "Contact", hash: "#contact" },
 ];
 
 export const profile = {
@@ -46,11 +47,18 @@ export const signalTags = [
 ];
 
 export const trustStrip = [
-  "Backend-focused",
-  "Laravel API development",
-  "ERP product exposure",
-  "Deployment basics",
-  "Full-stack support",
+  "PHP",
+  "Laravel",
+  "Livewire",
+  "Vue.js",
+  "React",
+  "JavaScript",
+  "AWS",
+  "Laravel Forge",
+  "REST APIs",
+  "ERP Systems",
+  "Backend Development",
+  "Full-Stack Delivery",
 ];
 
 export const experience = [
@@ -58,6 +66,7 @@ export const experience = [
     company: "Pico Innovation",
     role: "Intern Web Developer",
     meta: "ERP product exposure",
+    period: "Internship",
     points: [
       "Worked with an ERP product environment and saw how business workflows become application features.",
       "Built hands-on experience with Laravel and Livewire inside a team setting.",
@@ -67,33 +76,11 @@ export const experience = [
     company: "Dubai Base Company",
     role: "Junior Backend Developer",
     meta: "API development",
+    period: "Full-time",
     points: [
       "Developed backend APIs with Laravel for application features and integration needs.",
       "Improved my understanding of backend structure, request handling, and maintainable server-side code.",
     ],
-  },
-];
-
-export const strengths = [
-  {
-    title: "Backend-first mindset",
-    description:
-      "I focus on application logic, APIs, authentication, and business rules that need to remain stable over time.",
-  },
-  {
-    title: "Useful full-stack range",
-    description:
-      "I can support frontend implementation in Vue or React when a feature needs complete delivery across the stack.",
-  },
-  {
-    title: "Deployment awareness",
-    description:
-      "I have beginner-level AWS knowledge and experience using Laravel Forge for deployment workflows.",
-  },
-  {
-    title: "Practical product thinking",
-    description:
-      "I like turning business needs into workflows that feel clear for users and manageable for teams.",
   },
 ];
 

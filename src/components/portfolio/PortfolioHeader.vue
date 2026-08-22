@@ -1,36 +1,38 @@
 <template>
   <header class="site-header">
-    <RouterLink :to="{ path: '/', hash: '#home' }" class="brand-mark" @click="closeMenu">ZM</RouterLink>
+    <div class="header-inner">
+      <RouterLink :to="{ path: '/', hash: '#home' }" class="brand-mark" @click="closeMenu">ZM</RouterLink>
 
-    <button
-      type="button"
-      class="menu-toggle"
-      :class="{ 'is-open': isMenuOpen }"
-      :aria-expanded="isMenuOpen ? 'true' : 'false'"
-      aria-controls="site-navigation"
-      aria-label="Toggle navigation"
-      @click="toggleMenu"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav id="site-navigation" class="site-nav" :class="{ 'is-open': isMenuOpen }">
-      <RouterLink
-        v-for="item in navItems"
-        :key="item.hash"
-        :to="{ path: '/', hash: item.hash }"
-        :class="{ 'is-active': isActiveHash(item.hash) }"
-        @click="closeMenu"
+      <button
+        type="button"
+        class="menu-toggle"
+        :class="{ 'is-open': isMenuOpen }"
+        :aria-expanded="isMenuOpen ? 'true' : 'false'"
+        aria-controls="site-navigation"
+        aria-label="Toggle navigation"
+        @click="toggleMenu"
       >
-        {{ item.label }}
-      </RouterLink>
-    </nav>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <RouterLink :to="{ path: '/', hash: '#contact' }" class="header-cta" @click="closeMenu">
-      Contact
-    </RouterLink>
+      <nav id="site-navigation" class="site-nav" :class="{ 'is-open': isMenuOpen }">
+        <RouterLink
+          v-for="item in navItems"
+          :key="item.hash"
+          :to="{ path: '/', hash: item.hash }"
+          :class="{ 'is-active': isActiveHash(item.hash) }"
+          @click="closeMenu"
+        >
+          {{ item.label }}
+        </RouterLink>
+      </nav>
+
+      <RouterLink :to="{ path: '/', hash: '#contact' }" class="header-cta" @click="closeMenu">
+        Hire Me
+      </RouterLink>
+    </div>
   </header>
 </template>
 

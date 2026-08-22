@@ -1,9 +1,9 @@
 <template>
-  <section id="experience" class="content-section">
-    <div class="section-intro" data-aos="fade-up" data-aos-duration="650">
-      <p class="section-label">Experience</p>
-      <h2 class="section-title">Real product exposure with Laravel, APIs, and business workflows.</h2>
-      <p class="section-copy">
+  <section id="experience" class="experience-section">
+    <div class="section-header" data-aos="fade-up" data-aos-duration="700">
+      <p class="section-eyebrow">Experience</p>
+      <h2 class="section-heading">Real product exposure<br />with Laravel &amp; APIs.</h2>
+      <p class="section-subtext">
         My experience comes from working inside actual company environments,
         understanding how products operate, and contributing to backend
         features that support real users and real teams.
@@ -14,19 +14,19 @@
       <article
         v-for="item in items"
         :key="`${item.company}-${item.role}`"
-        class="experience-card"
+        class="exp-card"
         data-aos="fade-up"
-        data-aos-duration="650"
+        data-aos-duration="700"
       >
-        <div class="experience-top">
+        <div class="exp-card-top">
           <div>
-            <p class="card-label">{{ item.company }}</p>
-            <h3>{{ item.role }}</h3>
+            <p class="exp-company">{{ item.company }}</p>
+            <h3 class="exp-role">{{ item.role }}</h3>
           </div>
-          <span class="meta-pill">{{ item.meta }}</span>
+          <span class="exp-pill">{{ item.meta }}</span>
         </div>
 
-        <ul class="detail-list">
+        <ul class="exp-points">
           <li v-for="point in item.points" :key="point">{{ point }}</li>
         </ul>
       </article>
