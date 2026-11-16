@@ -27,7 +27,7 @@ export const profile = {
   phone: "09 763 122 056",
   phoneLink: "09763122056",
   resumeLink:
-    "https://drive.google.com/file/d/14kN3zh20vGmO5MpZdkh1wu-5cP5mwp31/view?usp=drive_link",
+    "https://drive.google.com/file/d/18sL0Gxa_MRhA6CBhxyLLtGxLa6Dd9hE7/view?usp=sharing",
   photo: profilePhoto,
 };
 
